@@ -8,6 +8,7 @@ import productsController from "./controllers/products";
 import productListController from "./controllers/productlist";
 import parcelmachinesController from "./controllers/parcelmachines";
 import nordpoolController from "./controllers/nordpool";
+import paymentController from "./controllers/payment";
 
 const app: Express = express();
 
@@ -25,6 +26,7 @@ app.use('/', productsController);
 app.use('/', productListController);
 app.use('/', parcelmachinesController);
 app.use('/', nordpoolController);
+app.use('/', paymentController);
 
 app.listen(3000,() => {
   console.log(`[server]: Server is running at http://localhost:3000`);
